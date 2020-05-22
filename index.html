@@ -550,7 +550,7 @@
         <div class="container">
             <div id="form-messages"></div>
             <div class="form-wrap">
-                <form id="contact-form" action="api/contact.php" method="post" autocomplete="off">
+                <form id="contact-form" action="api/mail.php" method="post" autocomplete="off">
                     <div class="row">
                         <div class="col-12 col-sm-6">
                             <input class="form-control" type="text" placeholder="Your Name" name="name" id="name"
@@ -567,11 +567,11 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <button class="btn btn-primary" type="submit">SEND MESSAGE</button>
+                            <button class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">SEND MESSAGE</button>
                         </div>
                     </div>
                 </form>
-                <div id="ajaxLoad"></div>
+               <!-- <div id="ajaxLoad"></div>-->
             </div>
         </div>
     </section>
