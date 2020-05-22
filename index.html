@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come after these tags -->
+
+    <!-- meta tags -->
+    <meta name="keywords" content="GIS, GIS Developer, spatial data, Developer"/>
+    <meta name="author" content="Reza Safarzadeh">
+    <meta property="og:title" content="Reza Safarzadeh" />
+    <meta property="dc:creator" content="Reza Safarzadeh" />
+    <meta name="description" content="Reza Safarzadeh is a GIS specialist and spatial software developer and works for FANAP ICT company in Iran. He holds a bachelor degree in Geodesy and Geomatics Engineering, and a Master of Science degree in GIS engineering.">
+    <meta property="og:description" content="Reza Safarzadeh is a GIS specialist and spatial software developer and works for FANAP ICT company in Iran. He holds a bachelor degree in Geodesy and Geomatics Engineering, and a Master of Science degree in GIS engineering.">
+
+
+    <!-- site title -->
+    <title>Reza Safarzadeh | Personal Website</title>
+
+
+    <!-- favicons using http://realfavicongenerator.net/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:200,300,300i,400,700" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- Academicons -->
+    <link rel="stylesheet" href="css/academicons.css"/>
+
+    <!-- Pretty Photo -->
+    <link rel="stylesheet" href="css/prettyPhoto.css"/>
+
+    <!-- Flickity -->
+    <link rel="stylesheet" href="css/flickity.css"/>
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="css/animate.css"/>
+
+    <!-- Skills bar -->
+    <link rel="stylesheet" href="css/skills-bar.css"/>
+
+    <!-- custom.css - the styling for this template -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizr -->
+    <script src="js/modernizr-custom.js"></script>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet-0.4.5/leaflet.css" />
+    <script src="https://cdn.leafletjs.com/leaflet-0.4.5/leaflet.js"></script>
+
+    <!-- Leaflet Map -->
+    <script language="javascript" type="text/javascript" src="js/map.js"></script>
+
+</head>
+
+<body onload="init();">
+
+<!-- status spinner showing while loading the page -->
+<div id="preloader"></div>
+
+<!-- HEADER -->
+<header>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top navbar-inverse">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--<a class="navbar-brand" href="#"><img src="img/Geography-Logo.gif" alt="bestAG"/></a>-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-0 ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#hero">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Education & Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- HEADER END -->
+
+<div id="content-wrap">
+
+    <!-- HERO AREA -->
+    <div class="jumbotron" id="#hero" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
+      <div id="mapCover1"></div>
+      <div id="map"></div>
+        <canvas id="effect-js"></canvas>
+        <div id="particles-js"></div>
+
+        <div id="bg-video-wrap">
+            <video id="bg-video" playsinline autoplay muted loop>
+            </video>
+        </div>
+        <div class="container">
+            <h1>Reza Safarzadeh</h1>
+            <span class="typed"></span>
+            <div class="typed-wrap"></div>
+			<!--<a href="#portfolio" class="btn btn-primary portfolio-link scroll-link">See my portfolio</a> -->
+        </div>
+       <!-- <div class="container">
+            <a href="#portfolio" class="btn btn-primary portfolio-link scroll-link">See my portfolio2</a>
+        </div> -->
+    </div>
+    <!-- HERO AREA END -->
+
+    <!-- bouncing arrow -->
+    <div class="arrow-wrap">
+        <a href="#about" class="arrow down-bounce scroll-link fa fa-angle-double-down"></a>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="photo-wrap">
+                        <img src="img/photo.jpg" class="photo" alt=""/>
+                        <div class="photo-overlay">
+                            <div class="photo-text social">
+                                <a href="https://www.linkedin.com/in/safarzadehreza/"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://github.com/safarzadeh-reza"><i class="fa fa-github"></i></a>
+                                <a href="https://www.facebook.com/reza.safarzadeh"><i class="fa fa-facebook"></i></a>
+                                <a href="https://twitter.com/reza_safarzadeh"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <p></p>
+                    <!--<div id="skillbar-wrap">-->
+                      <div class="skillbar" data-percent="80">
+                        <p class="skillbar-bar"></p>
+                        <span class="skillbar-title">Javascript</span>
+                      </div>
+                      <div class="skillbar" data-percent="70">
+                        <p class="skillbar-bar"></p>
+                        <span class="skillbar-title">Python</span>
+                      </div>
+                      <div class="skillbar" data-percent="95">
+                        <p class="skillbar-bar"></p>
+                        <span class="skillbar-title">HTML, CSS</span>
+                      </div>
+                      <div class="skillbar" data-percent="70">
+                        <p class="skillbar-bar"></p>
+                        <span class="skillbar-title">DBMSs</span>
+                      </div>
+                      <div class="skillbar" data-percent="80">
+                        <p class="skillbar-bar"></p>
+                        <span class="skillbar-title">MATLAB</span>
+                      </div>
+                   <!-- </div> -->
+                </div>
+                <div id="aboutRight" class="col-lg-6 col-12">
+                    <div>
+                        <h2>ABOUT</h2>
+                    </div>
+                    <div>
+                        <p>
+                        Reza is graduated from <a href="https://en.kntu.ac.ir/">K.N.Toosi University of Technology<a> in Iran with
+                        a Master's degree in Geographic Information Science (GIS). During his master studies, he worked on developing
+                        a multi-objective optimization model for urban land-use allocation in Tehran, Iran, 
+                        using multi-objective meta-heuristic algorithms and spatial metrics, considering the four objectives of : 
+                        (1) Compatibility between adjacent land uses, (2) Land suitability for each land-uses class, 
+                        (3) Accessibility between land-uses, and (4) Spatial growth pattern of the city.
+                        </p>
+                        <p>
+                        He has been working in <a href="http://en.fanap.ir/">FANAP ICT<a> as a GIS specialist and spatial software developer for the last 2 years, 
+                        working on design and implementation of GIS web services for "Pasargad Bank" in order to provide a real-time path 
+                        planing service for replenishment vehicles and optimizing AMTs' network by the use of meta-heuristic algorithms.
+                        He has enough proficiency on programming languages including Python, JavaScript, Java and MATLAB along with good experience on handling Databases.
+                        </p>
+                        <p>
+                          He earned rank 30th among 3000 applicants in the national master entrance exam, Iran. Additionally, he has a 
+                          demonstrated background in teamwork and team management as he was elected as a member of geomatics academic 
+                          committee of <a href="http://www.iust.ac.ir/en">Iran University of Science and Technology (IUST)<a> throughout 
+                          his Bachelor.
+                          He is always passionate to develop GIS services and software, provide GIS solutions, and to work on 
+                          challenging and real world spatial problems.
+                        </p>
+                        <p>
+                          If you want to know more about the projects he has done, check his Github,
+                          and see his <b>Vitae</b>.
+                        </p>
+                        <p><a href="CV-Safarzadeh.pdf" class="btn btn-secondary">Curriculum Vitae</a></P>
+
+                    </div>
+                    <div class="col-12 col-sm-6 social">
+                        <p class="">
+                          <a href="https://www.linkedin.com/in/safarzadehreza/"><i class="fa fa-linkedin"></i></a>
+                          <a href="https://github.com/safarzadeh-reza"><i class="fa fa-github"></i></a>
+                          <a href="https://www.facebook.com/reza.safarzadeh"><i class="fa fa-facebook"></i></a>
+                          <a href="https://twitter.com/reza_safarzadeh"><i class="fa fa-twitter"></i></a>
+                        </p>
+                    </div>
+                    <!-- Add Skillbar if you want -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT END -->
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="section-header">
+            <div>
+                <h2>My Skills and Interests</h2>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <!-- <div class="box"> -->
+                        <div class="box animation" data-animation="bounceInUp">
+                            <div class="circle"><i class="fa fa-globe"></i></div>
+                            <h3>GIS Development</h3>
+                            <p>With a masters degree in GIS engineering, I am always interested to develop applications with spatial data.</p></br></br>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="box animation" data-animation="bounceInUp">
+                        <!-- <div class="box"> -->
+                            <div class="circle"><i class="fa fa-code"></i></div>
+                            <h3>Coding</h3>
+                            <p>Coding cheers me up after a long day of work and keeps me awake for hours. My prefered coding languages are JavaScript and Python.</p></br>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="box animation" data-animation="bounceInUp">
+                        <!-- <div class="box"> -->
+                            <div class="circle"><i class="fa fa-database"></i></div>
+                            <h3>Spatial Data Science</h3>
+                            <p>In the era of Big Data, spatial data are generated at an unprecedented rate. I am interestd in applying data science techniques to spatial data and create insight from the data.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="box animation" data-animation="bounceInUp">
+                        <!--<div class="box">-->
+                            <div class="circle"><i class="fa fa-globe"></i></div>
+                            <h3>Ecotourism </h3>
+                            <p>In my free time, I like to visit natural environment, If not possible, play Ping-Pong, board games like chess or just read.</p></br></br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICES END -->
+
+
+        <!-- EXPERIENCE -->
+        <section id="experience">
+          <div class="section-header">
+            <div>
+              <h2>Education and Experience</h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col section-header">
+                <h4>Education</h4>
+              </div>
+              <div class="col section-header">
+                <h4>Experience</h4>
+              </div>
+            </div>
+            <div class="row timeline-row">
+              <div class="col">
+                <div class="timeline-block timeline-block-left">
+                    <!-- <div class="marker-left"></div> -->
+                    <div class="timeline-content">
+                        <h3>Master of Science (M.Sc.) | Geospatial Information Systems (GIS) Engineering</h3>
+                        <span>2014 - 2017</span>
+                        <p>
+                          K.N.Toosi University of technology, Tehran, Iran<br></br>
+                          My master's program was heavily focoused on GIS, and offered courses in all areas of GIS. 
+                          Fundamentals of GIS, Spatial Data Infrastructure, Web GIS, and Data Management are among the 
+                          important courses I took in that program. I had the opportunity to do projects in all these fields, 
+                          and conducted my Master's thesis research on <i>Spatial Multi-Objective Optimization of urban land 
+                          use allocation</i>.
+                        </p>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="timeline-block timeline-block-right">
+                    <!-- <div class="marker-right"></div> -->
+                    <div class="timeline-content">
+                        <h3>GIS Specialist and Spatial software developer</h3>
+                        <span><a href="http://en.fanap.ir/">FANAP ICT Subsidiary of Pasargad Financial Group </a></span></br>
+                        <span>Jan 2019 - Currently</span>
+                        <p>
+                        <li>
+                          Implementation of Web based GIS application (GeoBI) for branches and ATMs network for "Pasargad Bank" in Iran</br>
+                        </li>
+                        <li>  
+                          Spatial Analysis and site selection for establishing new branches and ATMs for "Pasargad Bank" in Iran</br>
+                        <li> 
+                          Using HTML, JavaScript (Spatial libraries: ESRI JavaScript API, OpenLayers), Python (Spatial libraries: GDAL, Shapely, Pyproj, GeoPandas)
+                        </li>
+                        </p>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row timeline-row">
+                <div class="col">
+                  <div class="timeline-block timeline-block-left">
+                      <!-- <div class="marker-left"></div> -->
+                      <div class="timeline-content">
+                          <h3>Bachelor of Science (B.Sc.) | Geodesy and Geomatics Engineering</h3>
+                          <span>209 - 2013</span>
+                          <p>
+                            Iran University of Science and Technology, Tehran, Iran<br></br>
+                            This program is a combination of Land Surveying, Geodesy, Photogrammetry, Remote Sensing, and GIS. I took courses in all these subdesciplines and that's when I became interested in GIS.
+                          </p>
+                      </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="timeline-block timeline-block-right">
+                      <!-- <div class="marker-right"></div> -->
+                      <div class="timeline-content">
+                          <h3>GIS Specialist</h3>
+                          <span> <a href="http://en.avayarsanat.ir/">AvayarSanat Co.</a></span></br>
+                          <span>April 2018 - December 2018</span>
+                          <p>
+                          <li>
+                            Design and implementation of spatial databases
+                            </li>
+                            <li>
+                            Producing specialized maps for different applications
+                            </li>
+                            <li>
+                            Using ARCGIS software, QGIS, GeoServer, MapServer, PostgreSQL,etc
+                            </li>
+                          </p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </section>
+        <!-- EXPERIENCE END -->
+
+        <!-- EXPERIENCE -->
+
+        <!-- EXPERIENCE END -->
+
+        <!-- TESTIMONIALS -->
+        <section id="testimonials" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="100">
+            <div class="section-header">
+                <div>
+                    <h2>Publications</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div id="testimonials-content" class="col-12">
+                        <div class="gallery-cell">
+                            <div class="testimonial">
+                                <!-- <img class="testimonial-avatar"
+                                     src="img/client1.jpg" alt=""> -->
+
+                                     <q class="testimonial-quote">
+                                       Safarzadeh Ramhormozi, R., Karimi, M., &#38; Alaei Moghadam, S. (2018). <a href="http://jgst.issge.ir/article-1-607-en.html">Multi Objective Optimization of Urban Land Use Allocation Using Meta-heuristic Algorithms and Spatial Metrics</a>.
+                                     </q>
+                                     <span class="testimonial-author"> Journal of Geomatics Science and Technology, 7 (3) ,189-212.</span>
+                                     <div class="testimonial-author"><p><i>Abstract:</i>  The main objective of this study is to support 
+                                     decision-making using multi objective Meta-heuristic algorithms for land use optimization and sorting 
+                                     the solutions with respect to the spatial pattern of urban growth. In the first step in this study, 
+                                     we applied the non-dominated sorting genetic algorithm ΙΙ (NSGA_II) ...</p> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- TESTIMONIALS END -->
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+        <div class="section-header">
+            <div>
+                <h2>My Projects</h2>
+            </div>
+        </div>
+        <div class="container">
+             <div id="filters-group">
+                <a class="filter" data-filter="*">show all</a>
+                <a class="filter" data-filter=".plugins">GIS</a>
+                <a class="filter" data-filter=".design">development</a>
+                <a class="filter" data-filter=".photography">photography</a>
+            </div>
+            <div id="portfolio-items" class="row">
+                <!--
+                <div class="item col-md-6 col-lg-4 photography" data-category="photography">
+                    <a title="This project exploit the potential of smartphones as sensors to report crimes or snese of unsafety for UCSB students. Users of the app can enable it
+                    when they feel unsafe, and the app will report their location anonymously to campus officials or UCSB police department. In case of a danger, users can shake their phone,
+                    and it will send their location and contact information directly to the police. The location data submitted by users are used to create a heat map of the locations where are felt to be more unsafe. <a href='#'>Read More</a>."
+                       data-rel="prettyPhoto"
+                       href="img/GauchoSafe1.png">
+                        <div class="item-wrap">
+                            <img class="img-fluid" src="img/GauchoSafe1.png" alt="GauchoSafe Android App">
+                        </div>
+                        <span class="magnifier"></span>
+                    </a>
+                </div>
+                -->
+                <div class="item col-md-6 col-lg-4 plugins design" data-category="plugins, design">
+                    <a title="Custom description with a <a href='#'>URL</a>."
+                       data-rel="prettyPhoto"
+                       href="img/portfolio/portfolio2.jpg">
+                        <div class="item-wrap">
+                            <img class="img-fluid" src="img/portfolio/portfolio2.jpg" alt="WordPress Plugin">
+                        </div>
+                        <span class="magnifier"></span>
+                    </a>
+                </div>
+                <div class="item col-md-6 col-lg-4 plugins photography" data-category="plugins, photography">
+                    <a title="Custom description with a <a href='#'>URL</a>."
+                       data-rel="prettyPhoto"
+                       href="img/portfolio/portfolio3.jpg">
+                        <div class="item-wrap">
+                            <img class="img-fluid" src="img/portfolio/portfolio3.jpg" alt="Photography">
+                        </div>
+                        <span class="magnifier"></span>
+                    </a>
+                </div>
+                <div class="item col-md-6 col-lg-4 col-12 plugins" data-category="plugins">
+                    <a title="Custom description with a <a href='#'>URL</a>."
+                       data-rel="prettyPhoto"
+                       href="img/portfolio/portfolio4.jpg">
+                        <div class="item-wrap">
+                            <img class="img-fluid" src="img/portfolio/portfolio4.jpg" alt="jQuery Plugin">
+                        </div>
+                        <span class="magnifier"></span>
+                    </a>
+                </div>
+                <div class="item col-md-6 col-lg-4 col-12 design" data-category="design">
+                    <a title="Custom description with a <a href='#'>URL</a>."
+                       data-rel="prettyPhoto"
+                       href="img/portfolio/portfolio5.jpg">
+                        <div class="item-wrap">
+                            <img class="img-fluid" src="img/portfolio/portfolio5.jpg" alt="Design">
+                        </div>
+                        <span class="magnifier"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PORTFOLIO END -->
+
+    <!-- HIRE ME -->
+    <section id="hireme" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
+        <div class="section-header container">
+            <div class="col-12">
+                <h2 class="animation" data-animation="fadeInLeft">Do you have an interesting project?</h2>
+				<h4 class="animation" data-animation="fadeInLeft">I am always interested in new projects related to big data and spatial computing, particularly in creating maps for different applications, big spatial data analysis, spatial modelling, and web development. Do not hesitate to contact me if you have an interesting research or development project. </h4>
+                <a data-animation="fadeInRight" class="btn btn-primary scroll-link animation" href="#contact">Contact
+                    me!</a>
+            </div>
+        </div>
+    </section>
+    <!-- HIRE ME END -->
+
+    <!-- BLOG / NEWS -->
+    <!--
+    <section id="blog">
+        <div class="section-header">
+            <div>
+                <h2>Watch my Blog</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 item">
+                    <img src="img/blog/blog1.jpg" class="img-fluid" alt=""/>
+                    <h4>Donec hendrerit ultricies orci eget pretium</h4>
+                    <p>
+                        Vivamus a mattis augue. Suspendisse aliquam justo in nibh hendrerit lobortis. Proin euismod nisl sem, ac rhoncus ex lacinia nec.
+                        Aliquam bibendum vel dui eu tincidunt...
+                    </p>
+                    <a href="#" class="btn btn-secondary">Read more...</a>
+                </div>
+                <div class="col-12 col-lg-4 item">
+                    <img src="img/blog/blog2.jpg" class="img-fluid" alt=""/>
+                    <h4>Donec hendrerit ultricies orci eget pretium</h4>
+                    <p>
+                        Vivamus a mattis augue. Suspendisse aliquam justo in nibh hendrerit lobortis. Proin euismod nisl sem, ac rhoncus ex lacinia nec.
+                        Aliquam bibendum vel dui eu tincidunt...
+                    </p>
+                    <a href="#" class="btn btn-secondary">Read more...</a>
+                </div>
+                <div class="col-12 col-lg-4 item">
+                    <img src="img/blog/blog3.jpg" class="img-fluid" alt=""/>
+                    <h4>Donec hendrerit ultricies orci eget pretium</h4>
+                    <p>
+                        Vivamus a mattis augue. Suspendisse aliquam justo in nibh hendrerit lobortis. Proin euismod nisl sem, ac rhoncus ex lacinia nec.
+                        Aliquam bibendum vel dui eu tincidunt...
+                    </p>
+                    <a href="#" class="btn btn-secondary">Read more...</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <!-- BLOG / NEWS END -->
+
+    <!-- CONTACT FORM  -->
+    <section id="contact">
+        <div class="section-header">
+            <div>
+                <h2>Contact Me</h2>
+                <p>Please fill the form below. I will contact you as soon as possible.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div id="form-messages"></div>
+            <div class="form-wrap">
+                <form id="contact-form" action="api/contact.php" method="post" autocomplete="off">
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <input class="form-control" type="text" placeholder="Your Name" name="name" id="name"
+                                   required/>
+                            <input class="form-control" type="text" placeholder="E-mail" name="email" id="email"
+                                   required/>
+                            <input class="form-control" type="text" placeholder="Subject" name="subject" id="subject"
+                                   required/>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <textarea class="form-control" placeholder="Your Message" rows="7" name="message"
+                                      id="message" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">SEND MESSAGE</button>
+                        </div>
+                    </div>
+                </form>
+                <div id="ajaxLoad"></div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT FORM  END -->
+</div>
+
+<div id="footer-wrap">
+
+    <!-- CONTACT INFO  -->
+    <div id="contact2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" id="googleMap"></div>
+            </div>
+            <div class="row withMap">
+                <div class="col-12 col-md-8">
+                </div>
+                <div class="col-12 col-md-4">
+                    <div>
+                        <i class="fa fa-map-marker"> </i>No.13, 14th Alley, Vozara st., Shahid Beheshti ave. </br>
+                                                          Tehran, Iran.
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"> </i>+98-9124499659
+                    </div>
+                    <div>
+                        <a href="mailto:rsafarzadeh@mail.kntu.ac.ir" target="_top"><i class="fa fa-envelope"> </i>rsafarzadeh@mail.kntu.ac.ir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTACT INFO END -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                </div>
+                <div class="col-12 col-sm-6 social">
+                    <p class="pull-right">
+                      <a href="https://www.linkedin.com/in/safarzadehreza/"><i class="fa fa-linkedin"></i></a>
+                      <a href="https://github.com/safarzadeh-reza"><i class="fa fa-github"></i></a>
+                      <a href="https://www.facebook.com/reza.safarzadeh"><i class="fa fa-facebook"></i></a>
+                      <a href="https://twitter.com/reza_safarzadeh"><i class="fa fa-twitter"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+</div>
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery-migrate-3.0.0.min.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/jquery.debouncedresize.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/skill.bars.jquery.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/custom.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMYUCUdT1WkZJFkrpI4IzEObG8_YNcZPg&callback=myMap"></script>
+
+</body>
+</html>

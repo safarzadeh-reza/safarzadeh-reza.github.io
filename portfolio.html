@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+  prefix="foaf: http://xmlns.com/foaf/0.1/
+  dbp: http://dbpedia.org/property/
+  dc: http://purl.org/dc/terms/
+  dbr: http://dbpedia.org/resource/
+  schema: http://schema.org/"
+  version="XHTML+RDFa 1.1" xml:lang="en">
+ <head>
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6456877-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-6456877-3');
+</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta property="dc:creator" content="Grant McKenzie" />
+  <title>GrantMcKenzie.com</title>
+  <link type="text/css" href="css/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+  <link href='http://fonts.googleapis.com/css?family=Numans' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.css" />
+  <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+  <script src="js/leaflet.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/loadPapers.js"></script>
+  <style>
+    a:link, a:visited { color: #247E94 !important; font-size: 1em; font-family: 'Questrial', sans-serf; font-weight: 200 }
+    a:hover { text-decoration: underline; }
+    .dateitem {margin-left:10px;width:60px;margin-top:5px;float:left;clear:both;}
+    .pubitem {float:left;margin-bottom:10px;width:800px;text-align:justify;line-height:23px;}
+  </style>
+ </head>
+ <body style="font-size:0.95em;font-family: 'Questrial', sans-serf" onload="init();">
+  <div id="mapCover1"></div>
+  <div id="portfoliobg" style="padding:0px 20px;"><br/>
+ <span style="font-family: 'Questrial', sans-serf;font-size:26px;color:#0B4C5F;letter-spacing:2px;float:left;cursor:pointer" onclick="location.href='index.php'">&lt; Grant : McKenzie /&gt;</span>
+
+ <div style="font-family: 'Questrial', sans-serf;font-size:18px;letter-spacing:2px;color:#666666;float:right;padding-top:10px"><a href="about.html">About</a> | <a href="publications.html">Publications</a> | Portfolio | <a href="academics/GrantMcKenzie_CV.pdf">CV</a> | <a href="contact.html">Contact</a></div>
+ <br/><br/><br/>
+ <div style="width:100%;height:10px;background-color:#999999;"></div><br/>
+   <br/>
+   <div class="portfolio">
+    <div class="portfolioInner">
+      <a href="portfolio/gce01.png" rel="lightbox[gce]" title="Predicting Financial Access"><img src="portfolio/gce.png" style="float:left;border:0" alt="GCE" /></a>
+      <div style="float:left;padding-left:20px;width:500px;text-align:justify">
+        <span class="title">Predicting Financial Access: Gates Foundation Grand Challenge</span><br/>
+        <p>
+        Access to digital financial services is fundamental to enabling those living in poverty around the world to become more economically stable, prosperous, and resilient. Using statistical and spatial analytical means, this project aims to use probabilistic models to predict the location of financial touch points that were previously not known.
+        </p>
+        <p style="color:#afd1ff">
+        Technology Stack: R, PostGreSQL/PostGIS, D3, NodeJS, iOS Swift, MapBox
+        </p>
+        <p>
+        Microsite: <a href="http://spatialdev.github.io/gce-microsite/" style="color:#999999;font-size:10pt;" rel="external" target="_blank">http://spatialdev.github.io/gce-microsite/</a>
+        </p>
+      </div>
+    </div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+      <a href="portfolio/ifpri_sciento01.png" rel="lightbox[ifpri_sciento]" title="IFPRI Scientometric Trends"><img src="portfolio/ifpri_sciento.png" style="float:left;border:0" alt="cgiar" /></a>
+      <div style="float:left;padding-left:20px;width:500px;text-align:justify">
+        <span class="title">CGIAR Scientometric Trends</span><br/>
+        <p>
+        The CGIAR Scientometric Trends portal visually depicts trends within scientific publications published via members of the Consultative Group for International Agricultural Research (CGIAR).  Specifically, this portal shows collaborations between member organizations as well as change in keywords over time.
+        </p>
+        <p style="color:#afd1ff">
+        Technology Stack: Javascript, D3, PHP7
+        </p>
+        <p>
+        URL: <a href="http://scientometrics.ifpri.org/" style="color:#999999;font-size:10pt;" rel="external" target="_blank">http://scientometrics.ifpri.org/</a>
+        </p>
+      </div>
+    </div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+      <a href="portfolio/to01.png" rel="lightbox[to]" title="TO"><img src="portfolio/to.png" style="float:left;border:0" alt="TO" /></a>
+      <div style="float:left;padding-left:20px;width:500px;text-align:justify">
+        <span class="title">(To): Where Matters</span><br/>
+        <p> (To) puts powerful location tools in the hands of those facing life transitions, where location is the driver for success and happiness. Whether you’re searching for the right school, making a career shift, or even a change in family status—choosing the right "place" can be an advantage from the start. (To) delivers location information for the perfect fit of lifestyle, family and career aspirations.
+        </p>
+        <p style="color:#afd1ff">
+        Technology Stack: iOS Swift 3, NodeJS, Ansible, PostGIS on AWS        </p>
+        <p>
+        URL: <a href="https://to-wherematters.com/" style="color:#999999;font-size:10pt;" rel="external" target="_blank">https://to-wherematters.com/</a>
+        </p>
+      </div>
+    </div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+      <a href="portfolio/vilga01.png" rel="lightbox[vilga]" title="VILGA"><img src="portfolio/vilga.png" style="float:left;border:0" alt="VILGA" /></a>
+      <div style="float:left;padding-left:20px;width:500px;text-align:justify">
+        <span class="title">VILGA: Linked Data Geovisualizer</span><br/>
+        <p>VILGA, a visually-interactive linked geodata application for geospatial knowledge exploration. VILGA allows users to explore any spatially-enabled portion of the linked data graph both through the relational properties and the geospatial properties of the data. Without any
+existing knowledge of SPARQL, VILGA allows users to query a linked data
+endpoint through the construction of geospatially enabled complex visual
+queries.
+        </p>
+        <p style="color:#afd1ff">
+        Technology Stack: JavaScript, D3, Leaflet
+        </p>
+        <p>
+        URL: <a href="http://ptal.io" style="color:#999999;font-size:10pt;" rel="external" target="_blank">http://ptal.io</a>
+        </p>
+      </div>
+    </div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+      <a href="portfolio/mie01.png" rel="lightbox[mie]" title="MIE 2015"><img src="portfolio/mie.png" style="float:left;border:0" alt="MIE 2015" /></a>
+      <div style="float:left;padding-left:20px;width:500px;text-align:justify">
+        <span class="title">Medical Informatics Europe 2015 Scientometric Portal</span><br/>
+        <p>Scientometrics play an increasingly important role in facilitating the understanding of different research fields as well as research topics within them. The medical informatics community is one such field. This portal allows users to visually explore how the MIE conference has changed and grown over the past few years.
+        </p>
+        <p style="color:#afd1ff">
+        Technology Stack: JavaScript, D3, Virtuoso Triple Store, PHP5
+        </p>
+        <p>
+        URL: <a href="http://scientometrics.geog.ucsb.edu/mie" style="color:#999999;font-size:10pt;" rel="external" target="_blank">http://scientometrics.geog.ucsb.edu/mie</a>
+        </p>
+      </div>
+    </div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/frankenplace01.png" rel="lightbox[franken]" title="FrankenPlace"><img src="portfolio/frankenplace.png" style="float:left;border:0" alt="FrankenPlace" /></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">FrankenPlace Thematic Search</span><br/>
+   			<p>Frankenplace is an interactive thematic map search engine that uses geographic context as a means to discover, organize, and interactively visualize the documents related to a search query.
+   			<p style="color:#afd1ff">
+   			Technology Stack: PostGres/PostGIS, Leaflet, JQuery, D3, Lucene/Elastic Search
+   			</p>
+   			<p>
+   			URL: <a href="http://www.frankenplace.com" style="color:#999999;font-size:10pt;" rel="external" target="_blank">http://www.frankenplace.com</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/poipulse01.png" rel="lightbox[poi]" title="POI Pulse"><img src="portfolio/poipulse.png" style="float:left;border:0" alt="POIPulse" /></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">POI (Point of Interest) Pulse</span><br/>
+   			<p>POI (Point of Interest) Pulse is an interactive application that shows the pulse of user behavior in the Greater Los Angeles area. Visualized through interaction with approximately 170,000 points of interest (e.g., Bars, Hospitals, Parks) rendered through over 12 million tiles, the map displays both typical activities patterns in the region as well as real-time social behavior.
+   			<p style="color:#afd1ff">
+   			Technology Stack: PostGres/PostGIS, Leaflet, JQuery, D3
+   			</p>
+   			<p>
+   			URL: <a href="http://www.poipulse.com" style="color:#999999;font-size:10pt;" rel="external" target="_blank">http://www.poipulse.com</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/lak01.png" rel="lightbox[lak]" title="LAK Challenge"><img src="portfolio/lak.png" style="float:left;border:0" alt="CitationMap" /></a>
+   		<a href="portfolio/citationmap02.png" rel="lightbox[lak]" title="LAK"></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">DEKDIV: Data Enrichment, Knowledge Discovery and Interactive Visualization Tool</span><br/>
+   			<p>A Linked-Data-driven Web portal for the field of learning analytics. The purpose of this portal is to allow users to browse Linked datasets, search for researchers, interact with dynamic visualizations, and perform in-depth analysis. We first enriched the datasets with geographic locations of research institutes and study topics extracted from papers.
+   			<p style="color:#afd1ff">
+   			Technology Stack: Fuseki SPARQL, extJS, Leaflet, Java, PostGreSQL
+   			</p>
+   			<p>
+   			URL: <a href="http://stko-exp.geog.ucsb.edu/lak" style="color:#999999;font-size:10pt;" rel="external" target="_blank">http://stko-exp.geog.ucsb.edu/lak</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/citationmap01.png" rel="lightbox[citationmap]" title="STKO Citation Map"><img src="portfolio/citationmap.png" style="float:left;border:0" alt="CitationMap" /></a>
+   		<a href="portfolio/citationmap02.png" rel="lightbox[citationmap]" title="CitationMap"></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">STKO Citation Map</span><br/>
+   			<p>
+   			The citation Map is designed to visualize the spread of scientific ideas through space and time. Mapping such geographic distributions can help discover the patterns of citations which may not be detected by simply looking at the numbers. The Citation Map can help researchers discover possible collaborators on the other side of the globe or remind academics of similar work being conducted nearby.
+   			<p style="color:#afd1ff">
+   			Technology Stack: JQuery, Leaflet, PHP, Microsoft Academic Search
+   			</p>
+   			<p>
+   			URL: <a href="http://stko-work.geog.ucsb.edu:8080/map" style="color:#999999;font-size:10pt;" rel="external" target="_blank">http://stko-work.geog.ucsb.edu:8080/map</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/oam01.png" rel="lightbox[oam]" title="Open Aid Partnership Map"><img src="portfolio/oam.png" style="float:left;border:0" alt="OAM" /></a>
+   		<a href="portfolio/oam02.png" rel="lightbox[oam]" title="Open Aid Partnership Map"></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">Open Aid Partnership Map</span><br/>
+   			<p>
+   			The Open Aid Partnership (OAP) brings together development partners, governments, civil society organizations, foundations, and the private sector to improve aid transparency and effectiveness. The OAP's goal is to collect and open up local development data to engage citizens and other stakeholders in evidence-based conversations on development.
+   			<p style="color:#afd1ff">
+   			Technology Stack: BackBoneJS, JQuery, Leaflet, MapBox, OpenStreetMap, PHP, PostGreSQL 9.3/PostGIS 2.2, Flask
+   			</p>
+   			<p>
+   			URL: <a href="http://spatialdev.com" style="color:#999999;font-size:10pt;" rel="external" target="_blank">http://spatialdev.com</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/bordertimes01.png" rel="lightbox[bordertimes]" title="Bordertimes iPhone App"><img src="portfolio/bordertimes.png" style="float:left;border:0" alt="BorderTimes" /></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">BorderTimes: Border wait times</span><br/>
+   			<p>
+   			BorderTimes gives users the ability to access US/Canadian land border (Customs &amp; Immigration) wait times from their iOS, Android or Mobile Web enabled device. The application offers both a Northbound and Southbound Quick View that lists all the land borders along with a green, yellow or red icon (indicating wait time). Users can toggle between Passenger, Nexus and Commercial wait times.
+   			<p style="color:#afd1ff">
+   			Technology Stack: iOS SDK, Objective-C, Android SDK, Java, HTML5, PHP
+   			</p>
+   			<p>
+   			URL: <a href="http://bordertimes.geogrant.com" style="color:#999999;font-size:10pt;" rel="external" target="_blank">http://bordertimes.geogrant.com</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+     <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/gendermappr01.png" rel="lightbox[gendermappr]" title="GenderMappr"><img src="portfolio/gendermappr.png" style="float:left;border:0" alt="GenderMappr" /></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">Gender Mapper</span><br/>
+   			<p>
+   			The International Food Policy Research Institute (IFPRI) and the IWMI are developing a "gender map" of agriculture in Sub-Saharan Africa in order to better understand how to target agricultural interventions to women and men farmers.  If you are knowledgeable about farming systems in a country, state or district in Sub-Saharan Africa, whether as extension worker, researcher or practitioner we encourage you to fill out the survey.
+   			<p style="color:#afd1ff">
+   			Technology Stack: PHP, ESRI JavaScript API, PostGreSQL/PostGIS
+   			</p>
+   			<p>
+   			URL: <a href="http://bordertimes.geogrant.com" style="color:#999999;font-size:10pt;" rel="external" target="_blank">http://gender.mappr.info</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/actionmappr01.png" rel="lightbox[actionmappr]" title="ActionMappr"><img src="portfolio/actionmappr.png" style="float:left;border:0" alt="ActionMappr" /></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">ActionMappr: See Where We're Doing</span><br/>
+   			<p>
+   			ActionMappr allows you to create a location-based collaboration tool for anything. It supports the great ideas of people all over the world whether working with the public or starting a new enterprise.  ActionMappr is backed by a powerful database and spatial analysis tools and kept up to date using mobile and social technologies.
+   			<p style="color:#afd1ff">
+   			Technology Stack: C# .NET 3.5, PostGres/PostGIS, JavaScript/JQuery, GeoServer, Bing Maps API
+   			</p>
+   			<p>
+   			URL: <a href="http://www.actionmappr.com" style="color:#999999;font-size:10pt;" rel="external">http://www.actionmappr.com</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/geoeye01.jpg" rel="lightbox[geoeye]" title="GeoEye"><img src="portfolio/geoeye.png" style="float:left;border:0" alt="geoeye" /></a>
+   		<!-- <a href="portfolio/geoeye02.jpg" rel="lightbox[geoeye]" title="GeoEye"></a>
+   		<a href="portfolio/geoeye03.jpg" rel="lightbox[geoeye]" title="GeoEye"></a>
+   		<a href="portfolio/geoeye04.jpg" rel="lightbox[geoeye]" title="GeoEye"></a>
+   		<a href="portfolio/geoeye05.jpg" rel="lightbox[geoeye]" title="GeoEye"></a>
+   		<a href="portfolio/geoeye06.jpg" rel="lightbox[geoeye]" title="GeoEye"></a>
+   		<a href="portfolio/geoeye07.jpg" rel="lightbox[geoeye]" title="GeoEye"></a>
+   		<a href="portfolio/geoeye08.jpg" rel="lightbox[geoeye]" title="GeoEye"></a>
+   		<a href="portfolio/geoeye09.jpg" rel="lightbox[geoeye]" title="GeoEye"></a> -->
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">GeoEye Space Imaging: GeoFUSE Search &amp; Discovery</span><br/>
+   			<p>
+   			With a simple and easy-to-use interface, GeoFUSE allows customers to use the Internet for locating and identifying available imagery from their extensive archive. Built on the ubiquitous Google Maps platform and ESRI's ArcGIS Server 9.3 technology, GeoFUSE makes it easy for GeoEye customers to locate a place on the globe and search for archive images using just a few simple tools.</p>
+   			<p style="color:#afd1ff">
+   			Technology Stack: ESRI's ArcGIS Server, ESRI JavaScript API, SQL Server
+   			</p>
+   			<p>
+   			URL: <a href="http://geofuse.geoeye.com/landing/Default.aspx" style="color:#999999;font-size:10pt;" rel="external">http://geofuse.geoeye.com/landing/Default.aspx</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/socialtrackr01.png" rel="lightbox[socialtrackr]" title="SocialTrackr"><img src="portfolio/socialtrackr.png" style="float:left;border:0" alt="SocialTrackr" /></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">SocialTrackr Android Application</span><br/>
+   			<p>
+   			A research tool for gathering, viewing and analyzing social spatio-temporal data through a mobile device. </p>
+   			<p style="color:#afd1ff">
+   			Technology Stack: Java, Android SDK, MySQL, PHP, Google Maps API, HeatMap API, Javascript/JQuery
+   			</p>
+   			<p>
+   			URL: <a href="http://socialtrackr.tumblr.com" style="color:#999999;font-size:10pt;" rel="external">http://socialtrackr.tumblr.com</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/bsms01.png" rel="lightbox[bsms]" title="BCTransit Bus Stop Management System"><img src="portfolio/bsms.png" style="float:left;border:0" alt="BSMS" /></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">BCTransit: Bus Stop Management System</span><br/>
+   			<p>
+   			The system allows administrators to add, edit and delete bus stop locations and attribute data. The public facing front-end allows users to access a plethora of information about a specific transit stop.
+   			</p>
+   			<p style="color:#afd1ff">
+   			Technology Stack: Postgresql/PostGIS, PHP, Google Maps API, JavaScript/JQuery 1.3
+   			</p>
+   			<p>
+   			URL: <a href="http://bct2.baremetal.com:8080/viewer.php" style="color:#999999;font-size:10pt;" rel="external">http://bct2.baremetal.com:8080/viewer.php</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/hawaiisolar01.png" rel="lightbox[hawaii]" title="TheSolarMap.com"><img src="portfolio/hawaiisolar.png" style="float:left;border:0" alt="TheSolarMap" /></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">The Solar Map</span><br/>
+   			<p>
+   			Based out of Hawaii, TheSolarMap.com is the World's first map-based online source to locate installers that showcase their products and as well as get their feedback from customers.
+   			</p>
+   			<p style="color:#afd1ff">
+   			Technology Stack: MySQL, PHP, Google Maps API, JQuery
+   			</p>
+   			<p>
+   			URL: <a href="http://thesolarmap.com/map" style="color:#999999;font-size:10pt;" rel="external">http://thesolarmap.com</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/nwproperty201.png" rel="lightbox[nwproperty2]" title="NWProperty.net"><img src="portfolio/nwproperty2.png" style="float:left;border:0" alt="NWProperty 2" /></a>
+   		<!-- <a href="portfolio/oregonsolar02.png" rel="lightbox[oregon]" title="Oregon Clean Energy Map"></a> -->
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">NWProperty.net Demographics</span><br/>
+   			<p>
+   			NWProperty.net demographics page shows demographics based on 1,3,5 Mile radius as well as 3,5,10 minute drive times and city level.  Features include viewing drive times on the map and downloading PDF demographic reports.
+   			</p>
+   			<p style="color:#afd1ff">
+   			Technology Stack: VB, .NET 2.0, ESRI BAO API, Bing Maps API, JQuery 1.3
+   			</p>
+   			<p>
+   			URL: <a href="http://nwproperty.net" style="color:#999999;font-size:10pt;" rel="external">http://nwproperty.net</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/futureforests01.png" rel="lightbox[ff]" title="Forestry Tasmania Future Forests"><img src="portfolio/futureforests.png" style="float:left;border:0" alt="Future Forests" /></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">Forestry Tasmania Public Education: Future Forests</span><br/>
+   			<p>
+   			I worked along side The University of Melbourne and Forestry Tasmania on a project to involve the public in future forest decisions.  The interface allows users to drag, drop and compare a number of different "forest scenarios."  Each option presents benefits and drawbacks and gives the public the ability to rank and vote for the option that best fits their goals.</p>
+   			<p style="color:#afd1ff">
+   			Technology Stack: JQuery 1.3 (Heavily UI focused), Quicktime Javascript
+   			</p>
+   			<p>
+   			URL: <a href="http://www.forestrytas.com.au/" style="color:#999999;font-size:10pt;" rel="external">http://www.forestrytas.com.au</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/bonterrasolar01.png" rel="lightbox[bonterra]" title="BonterraSolar"><img src="portfolio/bonterrasolar.png" style="float:left;border:0" alt="Bonterra Solar" /></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">Bonterra Solar Quotes System</span><br/>
+   			<p>
+   			Internal management system for requesting, assigning and scheduling the solar installations. </p>
+   			<p style="color:#afd1ff">
+   			Technology Stack: Drupal 7, PHP, MySQL, JQuery
+   			</p>
+   			<p>
+   			URL: <a href="http://www.bonterrasolar.com" style="color:#999999;font-size:10pt;" rel="external">http://www.bonterrasolar.com</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/geotweeter01.png" rel="lightbox[geotweeter]" title="geotweeter"><img src="portfolio/geotweeter.png" style="float:left;border:0" alt="Oregon Solar" /></a>
+   		<a href="portfolio/geotweeter02.png" rel="lightbox[geotweeter]" title="geotweeter"></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">geotweeter</span><br/>
+   			<p>
+   			<i>geotweeter</i> is an application that works with Twitter not only allowing you to update your status, but also include a map of your location. Through the mapping power of geotweeter you can spatially spice up your status with a link to a map of your location.
+   			</p>
+   			<p style="color:#afd1ff">
+   			Technology Stack: PHP, JavaScript / JQuery, CloudMade, Twitter API, Google Geocoding API, MySQL
+   			</p>
+   			<p>
+   			URL: <a href="http://www.geotweeter.com" style="color:#999999;font-size:10pt;" rel="external">http://www.geotweeter.com</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/harvestchoice01.png" rel="lightbox[harvestchoice]" title="HarvestChoice"><img src="portfolio/harvestchoice.png" style="float:left;border:0" alt="harvestchoice" /></a>
+   		<a href="portfolio/harvestchoice02.png" rel="lightbox[harvestchoice]" title="HarvestChoice"></a>
+   		<a href="portfolio/harvestchoice03.png" rel="lightbox[harvestchoice]" title="HarvestChoice"></a>
+   		<a href="portfolio/harvestchoice04.png" rel="lightbox[harvestchoice]" title="HarvestChoice"></a>
+   		<a href="portfolio/harvestchoice05.png" rel="lightbox[harvestchoice]" title="HarvestChoice"></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">HarvestChoice</span><br/>
+   			<p>
+   			The HarvestChoice <i>Spatial Data Portal</i> is a spatial search tool built on top of GeoNetwork Opensource that allows users to search though a network of metadata nodes, view the related spatial data through a web map and download specified portions of the dataset in a variety of formats.
+   			</p>
+   			<p style="color:#afd1ff">
+   			Technology Stack: GeoNetwork, GeoServer, FME Server 2009, Postgres/PostGIS, PHP, JavaScript, OpenLayers, Drupal, Lucene Search Engine
+   			</p><p>
+   			URL: <a href="http://www.harvestchoice.org" style="color:#999999;font-size:10pt;" rel="external">http://www.harvestchoice.org</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/agcommonsplatform01.png" rel="lightbox[agcommonsplatform]" title="AGCommonsPlatform.org"><img src="portfolio/agcommonsplatform.png" style="float:left;border:0" alt="agcommonsplatform" /></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">AGCommons Platform</span><br/>
+   			<p>
+   			This applications platform provides key elements for geospatial information discovery and accessibility: a comprehensive metadata catalog supporting robust search for geospatial data; an overlay library providing a data gallery for previewing contents of the AGCommons database; and the SMS query interface for access to the data via mobile phone.
+   			</p>
+   			<p style="color:#afd1ff">
+   			Technology Stack: OpenLayers, Bing Maps API, Google Maps API, GeoServer, GeoNetwork, PostGres/PostGIS, PHP, Javascript/JQuery
+   			</p>
+   			<p>
+   			URL: <a href="http://www.agcommonsplatform.org" style="color:#999999;font-size:10pt;" rel="external">http://www.agcommonsplatform.org</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/elpaso01.png" rel="lightbox[elpaso]" title="El Paso"><img src="portfolio/elpaso.png" style="float:left;border:0" alt="elpaso" /></a>
+   		<a href="portfolio/elpaso02.png" rel="lightbox[elpaso]" title="El Paso"></a>
+   		<a href="portfolio/elpaso03.png" rel="lightbox[elpaso]" title="El Paso"></a>
+   		<a href="portfolio/elpaso04.png" rel="lightbox[elpaso]" title="El Paso"></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">El Paso County Parcel Mapping Tool</span><br/>
+   			<p>
+   			The El Paso County Parcel Mapping Tool allows residents to search and discover information pertaining to specific parcels within the county of El Paso, Colorado.  Users can either search by clicking on a parcel via the map interface, or entering a numeric parcel code.</p>
+
+   			<p style="color:#afd1ff">
+   			Technology Stack: ESRI's ArcGIS Server 9.3, ESRI JavaScript API, Bing Maps API, JQuery 1.3, SQL Server 2005
+   			</p>
+   			<p>
+   			URL: <a href="http://www.elpasoco.com/" style="color:#999999;font-size:10pt;" rel="external">http://www.elpasoco.com</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/ccse01.png" rel="lightbox[ccse]" title="San Diego Solar Map"><img src="portfolio/sandiego.png" style="float:left;border:0" alt="ccse" /></a>
+   		<a href="portfolio/ccse02.png" rel="lightbox[ccse]" title="San Diego Solar Map"></a>
+   		<a href="portfolio/ccse03.png" rel="lightbox[ccse]" title="San Diego Solar Map"></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">California Center For Sustainable Energy: San Deigo Solar Map</span><br/>
+   			<p>
+   			A custom Joomla Component was developed to allow CCSE staff the ability to add, update and delete solar installations on the Solar Web Map.  MapServer and TileCache were used to automatically generate tiles after each change to the database.
+   			</p>
+   			<p style="color:#afd1ff">
+   			Technology Stack: Joomla 1.5, MySQL, PHP, MapServer, TileCache, OpenLayers, JQuery, MooTools, Google Maps Geocoder API
+   			</p>
+   			<p>
+   			URL: <a href="http://sd.solarmap.org/solar/index.php" style="color:#999999;font-size:10pt;" rel="external">http://sd.solarmap.org</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/agcommons01.png" rel="lightbox[agcommons]" title="AGCommons.org"><img src="portfolio/agcommons.png" style="float:left;border:0" alt="agcommons" /></a>
+   		<a href="portfolio/agcommons02.png" rel="lightbox[agcommons]" title="AGCommons.org"></a>
+   		<a href="portfolio/agcommons03.png" rel="lightbox[agcommons]" title="AGCommons.org"></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">AGCommons.org</span><br/>
+   			<p>
+   			Equipping Africa's Farmers with Location-specific Information to Reduce Uncertainty and Increase Returns. The site acts as a combination information source, document repository and geospatial data portal for all things related to Agriculture and Geospatial data in Africa.
+   			</p>
+   			<br/>
+   			<p style="color:#afd1ff">
+   			Technology Stack: Drupal, MySQL, PHP, GeoNetwork, Bing Maps API
+   			</p>
+   			<p>
+   			URL: <a href="http://www.agcommons.org" style="color:#999999;font-size:10pt;" rel="external">http://www.agcommons.org</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<a href="portfolio/pmt01.png" rel="lightbox[pmt]" title="PMT"><img src="portfolio/pmt.png" style="float:left;border:0" alt="pmt" /></a>
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">Project Mapping Tool</span><br/>
+   			<p>
+   			Description not available.
+   			</p>
+   			<p style="color:#afd1ff">
+   			Technology Stack: C# .NET 3.5, GeoServer, JavaScript, JQuery, Postgres/PostGIS, Bing Maps API
+   			</p>
+   			<p>
+   			URL: <a href="http://www.prototypetestsite.com" style="color:#999999;font-size:10pt;" rel="external">pmt</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<img src="portfolio/sr520.png" style="float:left" alt="sr520" />
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">SR 520 Project</span><br/>
+   			<p>
+   			Intranet release only.
+   			</p>
+   			<p style="color:#afd1ff">
+   			Technology Stack: MapServer, MapFish, OpenLayers, Postgres/PostGIS, TileCache, Python Image Library
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<img src="portfolio/udfcd.png" style="float:left" alt="udfcd" />
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">Urban Drainage Flood Control District</span><br/>
+   			<p>
+   			The Urban Drainage and Flood Control District works with local governments to solve and prevent multi-jurisdictional drainage and flood control challenges in order to protect people, property, and the environment.
+   			</p>
+   			<p style="color:#afd1ff">
+   			Technology STack: Google Maps API, JQuery, ESRI ArcGIS Server 9.3
+   			</p><p>
+   			URL: <a href="http://www.udfcd.org/" style="color:#999999;font-size:10pt;" rel="external">http://www.udfcd.org/</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<img src="portfolio/rememberaugust.png" style="float:left" alt="rememberaugust" />
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">Remember August</span><br/>
+   			<p>
+   			Website for the Vancouver based Pop Punk band Remember August.
+   			</p>
+   			<p style="color:#afd1ff">
+   			Technology Stack: Adobe Flex, HTML, JavaScript, MySQL, PHP
+   			</p><p>
+   			URL: <a href="http://www.rememberaugust.com" style="color:#999999;font-size:10pt;" rel="external">http://www.rememberaugust.com</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<img src="portfolio/kalem.png" style="float:left" alt="kalem" />
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">Kalem Photography</span><br/>
+   			<p>
+   			Website for the Richmond, BC based photographer Katrina Michell.
+   			</p>
+   			<p style="color:#afd1ff">
+   			Technology Stack: Adobe Flash, HTML, JavaScript, MySQL
+   			</p><p>
+   			URL: <a href="http://www.kalemphoto.com" style="color:#999999;font-size:10pt;" rel="external">http://www.kalemphoto.com</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <div class="portfolio">
+    <div class="portfolioInner">
+   		<img src="portfolio/wherecamp.png" style="float:left" alt="wherecamp" />
+   		<div style="float:left;padding-left:20px;width:500px;text-align:justify">
+   			<span class="title">WhereCampAfrica</span><br/>
+   			<p>
+   			coming soon.
+   			</p>
+   			<p style="color:#afd1ff">
+   			Technology Stack: Drupal, PHP, MySQL
+   			</p><p>
+   			URL: <a href="http://www.wherecampafrica.org" style="color:#999999;font-size:10pt;" rel="external">http://www.wherecampafrica.org</a>
+   			</p>
+   		</div>
+   	</div>
+   </div>
+   <hr/>
+   <div style="float:left;">&nbsp;&nbsp; 2016</div>
+   <div style="float:right;">&copy; 2008-2015 Grant McKenzie</div>
+  </div>
+  <div id="map"></div>
+ </body>
+</html>
