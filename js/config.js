@@ -11,7 +11,7 @@ var config_typedArray = ["GIScientist", "Developer", "Researcher"];
 var config_disableParalaxOnTouchDevices = true;
 
 /* Front page effect - can be 'none', 'particles', 'particle-fountain', 'video'  */
-var config_frontPageEffect = 'video';
+var config_frontPageEffect = 'particles';
 
 /* If config_frontPageEffect is set to video, here set the video URL, type and opacity */
 var config_videoUrl = 'video/background.mp4';
